@@ -1,8 +1,23 @@
-title: "Jorge Lasaosa"
-description: "IA aplicada a programar."
-url: "https://jorgelasaosa.github.io"
+title: "Mi Blog Personal"
+description: "IA aplicada a programar — sin humo"
+url: "https://jorgelasaosa.github.io"   # cámbialo cuando conectes dominio
+
 remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "default"
+
 plugins:
+  - jekyll-include-cache
   - jekyll-feed
   - jekyll-seo-tag
-minimal_mistakes_skin: "default"
+
+collections:
+  pages:
+    output: true
+    permalink: /:title/
+
+# Opcional, enlaces del nav (si quieres menú superior)
+# nav:
+#   - title: "Inicio"
+#     url: /
+#   - title: "Sobre mí"
+#     url: /about/
