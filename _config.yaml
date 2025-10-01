@@ -1,6 +1,6 @@
 title: "Mi Blog Personal"
 description: "IA aplicada a programar — sin humo"
-url: "https://jorgelasaosa.github.io"   # cámbialo cuando conectes dominio
+url: "https://jomartla.github.io"  # cámbialo cuando conectes dominio
 
 remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "default"
