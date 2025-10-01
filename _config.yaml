@@ -1,0 +1,8 @@
+title: "Jorge Lasaosa"
+description: "IA aplicada a programar."
+url: "https://jorgelasaosa.github.io"
+remote_theme: "mmistakes/minimal-mistakes"
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+minimal_mistakes_skin: "default"
