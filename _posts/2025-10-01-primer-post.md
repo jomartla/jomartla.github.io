@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Mi primer post en Jekyll"
 date: 2025-10-01
 tags: [ia, programacion, blog]
