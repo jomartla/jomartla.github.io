@@ -1,0 +1,278 @@
+/* Dark Mode Styles for Jekyll Blog */
+
+/* Dark mode variables */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --accent-color: #007acc;
+  --border-color: #e1e1e1;
+  --code-bg: #f8f8f8;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode variables */
+[data-theme="dark"] {
+  --bg-color: #1a1a1a;
+  --text-color: #e0e0e0;
+  --accent-color: #4a9eff;
+  --border-color: #333333;
+  --code-bg: #2d2d2d;
+  --shadow: rgba(0, 0, 0, 0.3);
+}
+
+/* Dark mode toggle button */
+.dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: var(--bg-color);
+  border: 2px solid var(--border-color);
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px var(--shadow);
+}
+
+.dark-mode-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px var(--shadow);
+}
+
+.dark-mode-toggle svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+/* Apply dark mode styles to body and main content */
+[data-theme="dark"] body {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .page {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .page__content {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+
+/* Dark mode for navigation */
+[data-theme="dark"] .masthead {
+  background-color: #2d2d2d !important;
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+[data-theme="dark"] .masthead__menu-item a {
+  color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .masthead__menu-item a:hover {
+  color: var(--accent-color) !important;
+}
+
+/* Ensure site title in header reflects dark mode text color */
+[data-theme="dark"] .site-title {
+  color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .site-title:hover {
+  color: var(--accent-color) !important;
+}
+
+/* Minimal Mistakes navigation bar background and interactions */
+[data-theme="dark"] .greedy-nav {
+  background: var(--bg-color) !important;
+}
+
+[data-theme="dark"] .masthead__inner-wrap {
+  background: var(--bg-color) !important;
+}
+
+[data-theme="dark"] .greedy-nav a {
+  color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .greedy-nav a:visited {
+  color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .greedy-nav .visible-links a:before {
+  background: var(--accent-color) !important;
+}
+
+[data-theme="dark"] .greedy-nav .hidden-links {
+  background: var(--bg-color) !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: 0 2px 4px 0 var(--shadow), 0 2px 10px 0 var(--shadow) !important;
+}
+
+[data-theme="dark"] .greedy-nav .hidden-links::before {
+  border-color: var(--border-color) transparent !important;
+}
+
+[data-theme="dark"] .greedy-nav .hidden-links::after {
+  border-color: var(--bg-color) transparent !important;
+}
+
+[data-theme="dark"] .greedy-nav .hidden-links a {
+  color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .greedy-nav .hidden-links a:hover {
+  color: var(--text-color) !important;
+  background: var(--code-bg) !important;
+}
+
+/* Hamburger icon lines */
+[data-theme="dark"] .navicon,
+[data-theme="dark"] .navicon::before,
+[data-theme="dark"] .navicon::after {
+  background: var(--text-color) !important;
+}
+
+[data-theme="dark"] .greedy-nav__toggle:before {
+  background-color: var(--bg-color) !important;
+}
+
+/* Ensure no unintended background on site title link */
+[data-theme="dark"] a.site-title {
+  background: transparent !important;
+}
+
+/* Dark mode for content areas */
+[data-theme="dark"] .page__inner-wrap {
+  background-color: var(--bg-color) !important;
+}
+
+[data-theme="dark"] .page__content {
+  background-color: var(--bg-color) !important;
+}
+
+/* Dark mode for headings */
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 {
+  color: var(--text-color) !important;
+}
+
+/* Dark mode for links */
+[data-theme="dark"] a {
+  color: var(--accent-color) !important;
+}
+
+[data-theme="dark"] a:hover {
+  color: #66b3ff !important;
+}
+
+/* Dark mode for code blocks */
+[data-theme="dark"] code {
+  background-color: var(--code-bg) !important;
+  color: #f8f8f2 !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+[data-theme="dark"] pre {
+  background-color: var(--code-bg) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+[data-theme="dark"] pre code {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+/* Dark mode for blockquotes */
+[data-theme="dark"] blockquote {
+  border-left: 4px solid var(--accent-color) !important;
+  background-color: #2d2d2d !important;
+  color: var(--text-color) !important;
+}
+
+/* Dark mode for tables */
+[data-theme="dark"] table {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+
+[data-theme="dark"] th,
+[data-theme="dark"] td {
+  border-color: var(--border-color) !important;
+  color: var(--text-color) !important;
+}
+
+[data-theme="dark"] th {
+  background-color: #2d2d2d !important;
+}
+
+/* Dark mode for forms */
+[data-theme="dark"] input,
+[data-theme="dark"] textarea,
+[data-theme="dark"] select {
+  background-color: var(--code-bg) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+/* Dark mode for buttons */
+[data-theme="dark"] .btn {
+  background-color: var(--accent-color) !important;
+  color: white !important;
+  border: 1px solid var(--accent-color) !important;
+}
+
+[data-theme="dark"] .btn:hover {
+  background-color: #66b3ff !important;
+  border-color: #66b3ff !important;
+}
+
+/* Dark mode for sidebar */
+[data-theme="dark"] .sidebar {
+  background-color: #2d2d2d !important;
+  border-right: 1px solid var(--border-color) !important;
+}
+
+[data-theme="dark"] .sidebar h3,
+[data-theme="dark"] .sidebar h4 {
+  color: var(--text-color) !important;
+}
+
+/* Dark mode for footer */
+[data-theme="dark"] .page__footer {
+  background-color: #2d2d2d !important;
+  border-top: 1px solid var(--border-color) !important;
+  color: var(--text-color) !important;
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Mobile responsiveness for toggle button */
+@media (max-width: 768px) {
+  .dark-mode-toggle {
+    top: 15px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+  }
+  
+  .dark-mode-toggle svg {
+    width: 20px;
+    height: 20px;
+  }
+}

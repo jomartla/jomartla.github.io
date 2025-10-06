@@ -2,13 +2,19 @@ title: "Mi Blog Personal"
 description: "IA aplicada a programar — sin humo"
 url: "https://jomartla.github.io"  # cámbialo cuando conectes dominio
 
+# Use remote theme (GitHub Pages compatible)
 remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "default"
+
+# Dark mode configuration
+# The theme supports built-in dark mode, but we're implementing custom toggle
+# Available skins: "default", "dark", "neon", "plum", "sunrise"
 
 plugins:
   - jekyll-include-cache
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-remote-theme
 
 collections:
   pages:

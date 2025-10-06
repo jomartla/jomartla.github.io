@@ -1,0 +1,31 @@
+<!-- Custom head include: dark mode CSS and early theme boot -->
+<meta name="color-scheme" content="light dark">
+
+<script>
+  (function() {
+    try {
+      var stored = localStorage.getItem('darkMode');
+      var hasStored = stored !== null;
+      var wantsDark = hasStored ? stored === 'true' : window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var html = document.documentElement;
+      html.setAttribute('data-theme', wantsDark ? 'dark' : 'light');
+    } catch (e) {
+      // If storage blocked, fall back to system
+      var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+    }
+  })();
+  // Avoid transition flashes during initial paint
+  (function(){
+    var style = document.createElement('style');
+    style.innerHTML = '*{transition:none !important}';
+    document.head.appendChild(style);
+    window.addEventListener('load', function(){
+      setTimeout(function(){ style.parentNode && style.parentNode.removeChild(style); }, 0);
+    });
+  })();
+  </script>
+
+<link rel="stylesheet" href="{{ '/assets/css/dark-mode.css' | relative_url }}">
+
+
