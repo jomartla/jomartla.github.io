@@ -1,9 +1,17 @@
 ---
 layout: home
-title: "Bienvenido"
+title: Bienvenido a mi Blog
+description: "Aprende a usar IA para programar mejor y más rápido con ejemplos reales y herramientas prácticas"
+author_profile: true
+show_excerpts: true
+entries_layout: list
+excerpt_separator: "<!--more-->"
 ---
 
-👋 Hola, soy **Jorge Martín Lasaosa**.  
-Este es mi blog sobre cómo usar **IA para programar mejor y más rápido**.  
+Soy **Jorge Martín Lasaosa** y aquí comparto las inquietudes que surgen en el día a día de un científico de datos.
 
-Aquí encontrarás mis artículos más recientes ⬇️
+## ¿Qué encontrarás aquí?
+
+- **Reflexiones** sobre la Inteligencia Artificial y el mundo que la rodea
+- **Herramientas de IA** que uso como desarrollador
+- **Proyectos personales** que puedan ser útiles

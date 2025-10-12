@@ -1,5 +1,5 @@
-title: "Mi Blog Personal"
-description: "IA aplicada a programar — sin humo"
+title: "Jorge Martín Lasaosa"
+description: "Blog personal en el que hablar de mis inquietudes y proyectos personales"
 url: "https://jomartla.github.io"  # cámbialo cuando conectes dominio
 
 # Use remote theme (GitHub Pages compatible)
@@ -20,6 +20,24 @@ collections:
   pages:
     output: true
     permalink: /:title/
+
+# Social media links
+author:
+  name: "Jorge Martín Lasaosa"
+  avatar: "/assets/images/bio-photo.jpg"  # Optional: add your photo
+  bio: "Científico de datos y desarrollador apasionado por la IA"
+  location: "España"
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/jorgemartinlasaosa/"
+
+# Footer configuration
+footer:
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/jorgemartinlasaosa/"
 
 # Opcional, enlaces del nav (si quieres menú superior)
 # nav:
