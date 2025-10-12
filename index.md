@@ -2,7 +2,7 @@
 layout: home
 title: Bienvenido a mi Blog
 description: "Aprende a usar IA para programar mejor y más rápido con ejemplos reales y herramientas prácticas"
-author_profile: true
+author_profile: false
 show_excerpts: true
 entries_layout: list
 excerpt_separator: "<!--more-->"

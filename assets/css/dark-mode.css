@@ -263,27 +263,74 @@
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
-/* LinkedIn button styling */
+/* Social buttons styling - LinkedIn and RSS */
+.page__footer-follow .social-icons {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.page__footer-follow .social-icons li {
+  display: inline-block;
+}
+
 .page__footer-follow .social-icons a {
   color: var(--text-color) !important;
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 2px solid var(--border-color);
+  text-decoration: none;
+  position: relative;
 }
 
 .page__footer-follow .social-icons a:hover {
   color: var(--accent-color) !important;
-  transform: translateY(-2px);
+  transform: translateY(-3px);
   background-color: rgba(255, 255, 255, 0.1);
+  border-color: var(--accent-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.page__footer-follow .social-icons .fab.fa-linkedin {
-  font-size: 1.3em;
+/* Icon styling */
+.page__footer-follow .social-icons .fab.fa-linkedin,
+.page__footer-follow .social-icons .fas.fa-rss-square {
+  font-size: 1.4em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Hide default theme feed button */
+.page__footer-follow ul:not(.social-icons) {
+  display: none !important;
+}
+
+/* Mobile responsiveness for social buttons */
+@media (max-width: 768px) {
+  .page__footer-follow .social-icons {
+    gap: 20px;
+  }
+  
+  .page__footer-follow .social-icons a {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .page__footer-follow .social-icons .fab.fa-linkedin,
+  .page__footer-follow .social-icons .fas.fa-rss-square {
+    font-size: 1.5em;
+  }
 }
 
 /* Mobile responsiveness for toggle button */
