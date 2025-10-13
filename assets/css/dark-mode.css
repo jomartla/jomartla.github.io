@@ -70,7 +70,7 @@
 
 /* Dark mode for navigation */
 [data-theme="dark"] .masthead {
-  background-color: #2d2d2d !important;
+  background-color: var(--bg-color) !important;
   border-bottom: 1px solid var(--border-color) !important;
 }
 
@@ -98,6 +98,18 @@
 
 [data-theme="dark"] .masthead__inner-wrap {
   background: var(--bg-color) !important;
+}
+
+/* Ensure full-width nav areas are consistent on large screens */
+[data-theme="dark"] .greedy-nav .visible-links {
+  background-color: var(--bg-color) !important;
+}
+
+/* Darken the mobile overlay if the toggle is used */
+@supports (pointer-events: none) {
+  [data-theme="dark"] .greedy-nav__toggle:before {
+    background-color: var(--bg-color) !important;
+  }
 }
 
 [data-theme="dark"] .greedy-nav a {

@@ -16,6 +16,10 @@ plugins:
   - jekyll-seo-tag
   - jekyll-remote-theme
 
+# Hide theme RSS/Atom links in UI
+atom_feed:
+  hide: true
+
 collections:
   pages:
     output: true
